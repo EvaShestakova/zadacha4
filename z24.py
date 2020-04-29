@@ -15,7 +15,6 @@ for line in f:
                 k = k + 1
                 n = i
             elif i < n:
-                fl = 1
                 print("Wrong sequence")
                 f.close()
                 exit()
