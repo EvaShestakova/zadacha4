@@ -2,9 +2,9 @@ try:
     f = open("data.txt")
 except:
     print("cannot open file")
+    exit()
 k = 0
 n = 0
-fl = 0
 for line in f:
     for i in line.split():
         if k == 0:
@@ -16,8 +16,7 @@ for line in f:
                 n = i
             elif i < n:
                 fl = 1
-if fl==0:
-    print(k)
-else:
-    print("Wrong sequence")
+                print("Wrong sequence")
+                exit()
+print(k)
 f.close()
